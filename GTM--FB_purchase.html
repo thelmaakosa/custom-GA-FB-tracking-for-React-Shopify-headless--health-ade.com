@@ -1,0 +1,35 @@
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '{{Facebook Pixel ID}}', { 
+    em: '{{dlv - Thank You Page - Customer Email}}', 
+    external_id: '{{dlv - Customer ID}}', 
+    ga_id: '{{cookie - GA Client ID}}', 
+    customer_type: '{{js - New Customer - Yes or No}}', 
+    ph: '{{dlv - Thank You Page - Customer Phone Number}}',
+    fn: '{{dlv - Thank You Page - Customer First Name}}',
+    ln: '{{dlv - Thank You Page - Customer Last Name}}',
+    ct: '{{dlv - Thank You Page - Customer City}}',
+    st: '{{dlv - Thank You Page - Customer Province Code}}',
+    zp: '{{dlv - Thank You Page - Customer Zip}}',
+    country: '{{dlv - Thank You Page - Customer Country Code}}',
+    });
+  fbq('track', 'Purchase', {
+   value: {{dlv - Thank You Page - Order Subtotal}},
+   contents: {{js - Facebook - Content IDs - Thank You Page}},
+   order_id: '{{dlv - Thank You Page - Order ID}}',
+   content_type: 'product_group',
+   currency: '{{dlv - Global - Currency Code}}',
+  },
+  {
+    eventID: '{{dlv - Thank You Page - Order ID}}'
+  });
+</script>
+<!-- End Facebook Pixel Code -->
