@@ -1,0 +1,402 @@
+<!doctype html>
+<html>
+<head>  
+{% render 'elevar-head' %}
+{% comment %}EasylockdownHeadBegin{% endcomment %}{% capture elhRender %}{% render 'easylockdown_head', easylockdownRender: true, easylockdownCustomPriceSelector: easylockdownCustomPriceSelector %}{% endcapture %}{% assign elhRender = elhRender | split: '--elhResults--'%}{{ elhRender[0] }}{% comment %}EasylockdownHeadEnd{% endcomment %}
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+<title>{{ page_title }}</title>
+{% render "global--rewrites" %}
+{% render "meta--preconnect" %}
+{% render "meta--site-by" %}
+{% render "meta--information" %}
+<link rel="stylesheet" href="{{ '_init.css' | asset_url }}" type="text/css" media="all" />
+<script src="{{ 'shopify_common.js' | shopify_asset_url }}" defer="defer"></script>
+{% render "meta--scripts" %}
+{{ content_for_header }}
+
+
+<!-- JavaScript based. Auto SSL. Auto fallback to image -->
+<!-- Start FastG8 Pixel Tag -->
+<script type="text/javascript">
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://" : "http://") + "u.fg8dgt.com/pixel?type=js&id=983&cb=" + Math.floor(Math.random() * 100000000);
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+</script>
+{% comment %}
+<noscript>
+<img src="//u.fg8dgt.com/pixel?type=img&id=983&cb={{ 'now' | date: "%s"}}" style="display: none;" border="0" height="1" width="1"/>
+</noscript>
+{% endcomment %}
+<!-- End FastG8 Pixel Tag -->
+
+<!-- JavaScript based. Auto SSL. Auto fallback to image -->
+<!-- Start FastG8 Pixel Tag -->
+<script type="text/javascript">
+(function() {
+var elem = document.createElement('script');
+elem.src = (document.location.protocol == "https:" ? "https://" : "http://") + "u.fg8dgt.com/pixel?type=js&id=984&cb={{ 'now' | date: "%s"}}" + Math.floor(Math.random() * 100000000);
+elem.async = true;
+elem.type = "text/javascript";
+var scpt = document.getElementsByTagName('script')[0];
+scpt.parentNode.insertBefore(elem, scpt);
+})();
+</script>
+{% comment %}
+<noscript>
+<img src="//u.fg8dgt.com/pixel?type=img&id=984&cb={{ 'now' | date: "%s"}}" style="display: none;" border="0" height="1" width="1"/>
+</noscript>
+{% endcomment %}
+<!-- End FastG8 Pixel Tag -->
+  
+<!-- Snap Pixel Code -->
+<script type='text/javascript'>
+(function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+{a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+r.src=n;var u=t.getElementsByTagName(s)[0];
+u.parentNode.insertBefore(r,u);})(window,document,
+'https://sc-static.net/scevent.min.js');
+
+snaptr('init', 'a0cc0c1d-ac47-43ea-bd9f-be3f665e8197', {
+'user_email': '{% if customer %}{{ customer.email }}{% endif %}'
+});
+
+snaptr('track', 'PAGE_VIEW');
+
+</script>
+<!-- End Snap Pixel Code -->
+
+<!-- AddShoppers Pixel Code -->
+<script type="text/javascript">
+    var AddShoppersWidgetOptions = { 'loadCss': false };
+    (!function(){
+        var t=document.createElement("script");
+        t.type="text/javascript",
+        t.async=!0,
+        t.id="AddShoppers",
+        t.src="https://shop.pe/widget/widget_async.js#600ed8cc93f3c370b52282c0",
+        document.getElementsByTagName("head")[0].appendChild(t)
+    }());
+</script>
+<!-- End AddShoppers Pixel Code -->
+
+<!-- TikTok Pixel Code -->
+<script>
+!function (w, d, t) {
+w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+
+ttq.load('C3S6GRO4C3S2QIOV5E3G');
+ttq.page();
+ttq.track('Browse')
+}(window, document, 'ttq');
+</script>
+<!-- End TikTok Pixel Code -->
+
+
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', 346566022418292);
+  fbq('track', 'PageView');
+</script>
+<!-- End Facebook Pixel Code -->
+
+  
+  <script src="https://cdn-widgetsrepository.yotpo.com/v1/loader/RtI-hWXmhX4-gaPz_hnhjA" async></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+{% render 'gsf-conversion-pixels' %}
+</head>
+<body class="{{ template.name }}">
+  {% render 'elevar-body-end' %}
+<!-- Use of this pixel is subject to the Amazon ad specs and policies at http://www.amazon.com/b/?&node=7253015011 -->
+<!-- Use of this pixel is subject to the Amazon ad specs and policies at http://www.amazon.com/b/?&node=7253015011 -->
+<script type='text/javascript'>var _pix = document.getElementById('_pix_id_c8934e0d-f07b-bb9e-e676-b8f5da6f8a48');if (!_pix) { var protocol = '//'; var a = Math.random() * 1000000000000000000; _pix = document.createElement('iframe'); _pix.style.display = 'none'; _pix.setAttribute('src', protocol + 's.amazon-adsystem.com/iu3?d=generic&ex-fargs=%3Fid%3Dc8934e0d-f07b-bb9e-e676-b8f5da6f8a48%26type%3D55%26m%3D1&ex-fch=416613&ex-src=https://health-ade.com/&ex-hargs=v%3D1.0%3Bc%3D4894651990201%3Bp%3DC8934E0D-F07B-BB9E-E676-B8F5DA6F8A48' + '&cb=' + a); _pix.setAttribute('id','_pix_id_c8934e0d-f07b-bb9e-e676-b8f5da6f8a48'); document.body.appendChild(_pix);}</script>
+<noscript><img height='1' width='1' border='0' alt='' src='https://s.amazon-adsystem.com/iui3?d=forester-did&ex-fargs=%3Fid%3Dc8934e0d-f07b-bb9e-e676-b8f5da6f8a48%26type%3D55%26m%3D1&ex-fch=416613&ex-src=https://health-ade.com/&ex-hargs=v%3D1.0%3Bc%3D4894651990201%3Bp%3DC8934E0D-F07B-BB9E-E676-B8F5DA6F8A48' /></noscript>
+
+{% include "__namespace" %}
+<div id="global-mask"></div>
+<div id="container">
+	{% render "global--header" %}
+	<main role="main" id="main" data-router-wrapper>
+		<div class="view-{{ namespace }}" data-router-view="{{ namespace }}">
+          {% comment %}{{ content_for_layout }}{% endcomment %}
+          {% render 'easylockdown_body', content_for_layout: content_for_layout, elhDefines: elhRender[1] %}
+		</div>
+	</main>
+	{% render "global--footer" %}
+	{% render "global--scope" %}
+</div>
+{% render "global--closing-tags" %}
+
+<script type="text/javascript">
+var stylesheet = document.createElement("link");
+stylesheet.href = "{{ '_main.css' | asset_url }}";
+stylesheet.rel = "stylesheet";
+stylesheet.type = "text/css";
+document.getElementsByTagName("head")[0].appendChild(stylesheet);
+</script>
+<script type="text/javascript" src="{{ '_main.js' | asset_url }}" defer></script>
+  
+  <script type="text/javascript">
+    jQuery('document').ready(function(){
+      
+      {% for item in cart.items %}
+      {{ item.variant_id }}
+      	{% if item.variant_id == 41044727038108 %}
+      		jQuery.post('/cart/update.js', {updates: {41044727038108: 0, 41097963995292: 0}}); //CLEAR BOTTLE DEPOSIT
+            setTimeout(function(){
+              location.reload(); 
+            }, 1000);
+      		{% break %}
+      	{% elsif item.variant_id == 41097963995292 %}
+      		jQuery.post('/cart/update.js', {updates: {41044727038108: 0, 41097963995292: 0}}); //CLEAR BOTTLE DEPOSIT
+      		setTimeout(function(){
+              location.reload(); 
+            }, 1000);
+      		{% break %}
+      	{% else %}
+      		{% continue %}
+      	{% endif %}
+      
+      {% endfor %}
+      
+      
+      {% comment %}
+      jQuery('body').on('click', '.add-to-cart', function() {
+          setTimeout(function(){ 
+            addHolidayDiscount();
+          }, 1500);
+      });
+      jQuery('body').on('click', '#mini-cart-form .cart-remove', function() {
+          setTimeout(function(){ 
+            addHolidayDiscount();
+          }, 1500);
+      });
+      jQuery('body').on('click', '.increment-wrapper .increment', function() {
+          setTimeout(function(){ 
+            addHolidayDiscount();
+          }, 1500);
+      });
+      
+      setTimeout(function(){ 
+        addHolidayDiscount();
+      }, 1500);
+      
+      
+      
+      function addHolidayDiscount(){
+        /*
+        var cartCount = jQuery('.cart-quantity').text();
+        var CheckoutURL = jQuery('.lymCheckOut').attr('href');
+        
+        var firstOffer ="/discount/HOLIDAY25?redirect=/checkout/";
+        var secOffer ="/discount/HOLIDAY30?redirect=/checkout/";
+        var thirdOffer ="/discount/HOLIDAY35?redirect=/checkout/";
+        var festiveOffer ="/discount/FESTIVE30?redirect=/checkout/";
+        
+        var firstOfferMsg ="<p class='message' style='display: block;'>Buy 1 Save 25%</p>";
+        var secOfferMsg ="<p class='message' style='display: block;'>Buy 2 Save 30%</p>";
+        var thirdOfferMsg ="<p class='message' style='display: block;'>Buy 3 Save 35%</p>";
+        var festiveOfferMsg ="<p class='message' style='display: block;'>30% Off</p>";
+        
+        jQuery('.lymCheckOut').attr('href', festiveOffer);
+        jQuery('.success-messages').empty().html(festiveOfferMsg);
+        
+        
+        if (cartCount == 1) {
+          jQuery('.lymCheckOut').attr('href', firstOffer);
+        } else if (cartCount == 2) {
+          jQuery('.lymCheckOut').attr('href', secOffer);
+        } else if (cartCount > 2) {
+          jQuery('.lymCheckOut').attr('href', thirdOffer);
+        } else {
+          
+        }
+        
+        if (cartCount <= 1) {
+          jQuery('.success-messages').empty().html(firstOfferMsg);
+        } else if (cartCount <= 2) {
+          jQuery('.success-messages').empty().html(secOfferMsg);
+        } else if (cartCount >= 3) {
+          jQuery('.success-messages').empty().html(thirdOfferMsg);
+        } else {
+          
+        }
+        
+        
+        
+        
+        console.log(cartCount);
+        */
+        
+      }
+      {% endcomment %}
+      
+      
+    });
+  </script>
+
+
+<!-- CRITEO START -->
+{% include 'criteo-tracking' %}
+<!-- CRITEO END -->
+
+<!-- Back in Stock helper snippet -->
+{% if template.name == "product" %}{% render 'back-in-stock-helper' %}{% endif %}
+<!-- End Back in Stock helper snippet -->
+  
+  <script>
+    const questions = document.querySelectorAll('.drawer:not(.bound) .question.drawer-header');
+    let activeQuestion = questions[0].parentElement;
+    if(questions.length) {
+      questions.forEach(question => {
+        question.nextElementSibling.style.maxHeight = 0; 
+        question.addEventListener('click', () => {
+			if(activeQuestion !== question.parentElement) {
+				activeQuestion.classList.remove('open');
+          		const actAnswer = activeQuestion.querySelector('.answer');
+                if(actAnswer) {
+					actAnswer.style.maxHeight = '1px'; 
+                }
+        	}                                  
+			activeQuestion = question.parentElement;                      
+
+			question.parentElement.classList.toggle('open');
+            if(question.parentElement.classList.contains('open')) {
+				let h = 0;
+              for(let i = 0; i < question.nextElementSibling.children.length; i++) {
+               	h = h +  question.nextElementSibling.children[i].offsetHeight;
+              }
+              question.nextElementSibling.style.maxHeight = h + 20 + 'px';
+            } else {
+             	question.nextElementSibling.style.maxHeight = '1px'; 
+            }
+		});
+      }) 
+    }
+  </script>
+  
+<script>
+    
+    let lastUrl = location.href; 
+
+    if ( lastUrl.includes("products")) {
+      
+      		setTimeout(function() {
+
+              	const prod = {
+                        "name": $("form input[name='data']").attr("product_name"),
+                        "product_id": $("form input[name='data']").attr("product_id"),
+                        "variant_id": $("form input[name='data']").attr("variant_id"),
+                        "variant": $("form input[name='data']").attr("variant"),
+                        "sku":$("form input[name='data']").attr("sku"),
+                        "category":$("form input[name='data']").attr("category"),
+                        "brand": $("form input[name='data']").attr("brand"),
+                        "price": $("form input[name='data']").attr("price"),
+                        "currency": $("form input[name='data']").attr("currency"),
+                        "url":$("form input[name='data']").attr("url"),
+                        "image":$("form input[name='data']").attr("image_url"),
+                        "inventory":$("form input[name='data']").attr("inventory")
+                        };
+                console.log("productData", prod);
+                dataLayer.push({
+                  'event': 'dl_view_item',
+                  'newPath': location.href,
+                  'event_time':'{{ "now" | date: "%Y-%m-%d %H:%M" }}',
+                  'gtm.uniqueEventId':dataLayer.length, 
+                  'product_info': prod, 
+                  'ecommerce.detail.products': prod
+                });
+              
+                fbq('track', 'ViewContent', {
+                  'content_name': prod.name,
+                  'content_category': prod.category,
+                  'content_ids': prod.product_id,
+                  'content_type': 'product',
+                  'value': prod.price,
+                  'currency': prod.currency, 
+                  'newPath':location.href
+                });
+              
+            }, 2000)
+            
+      		
+    	}
+    
+    new MutationObserver(() => {
+    	const url = location.href;
+	                         
+      	if ( lastUrl !==url && url.includes("products")) {
+      
+      		setTimeout(function() {
+
+              	const prod = {
+                        "name": $("form input[name='data']").attr("product_name"),
+                        "product_id": $("form input[name='data']").attr("product_id"),
+                        "variant_id": $("form input[name='data']").attr("variant_id"),
+                        "variant": $("form input[name='data']").attr("variant"),
+                        "sku":$("form input[name='data']").attr("sku"),
+                        "category":$("form input[name='data']").attr("category"),
+                        "brand": $("form input[name='data']").attr("brand"),
+                        "price": $("form input[name='data']").attr("price"),
+                        "currency": $("form input[name='data']").attr("currency"),
+                        "url":$("form input[name='data']").attr("url"),
+                        "image":$("form input[name='data']").attr("image_url"),
+                        "inventory":$("form input[name='data']").attr("inventory")
+                        };
+                console.log("productData", prod);
+                dataLayer.push({
+                  'event': 'dl_view_item',
+                  'oldPath': google_tag_manager['GTM-WF4RMZ2'].dataLayer.get('gtm.oldUrl'),
+                  'newPath': location.href,
+                  'event_time':'{{ "now" | date: "%Y-%m-%d %H:%M" }}',
+                  'gtm.uniqueEventId':dataLayer.length, 
+                  'product_info': prod,
+                  'ecommerce.detail.products': prod
+                });
+              
+                fbq('track', 'ViewContent', {
+                  'content_name': prod.name,
+                  'content_category': prod.category,
+                  'content_ids': prod.product_id,
+                  'content_type': 'product',
+                  'value': prod.price,
+                  'currency': prod.currency, 
+                  'newPath':location.href,
+                  'oldPath': google_tag_manager['GTM-WF4RMZ2'].dataLayer.get('gtm.oldUrl')
+                });
+              
+            }, 2000)
+            
+            lastUrl = url;
+      		
+    	}
+
+          
+  	
+    }).observe(document, {subtree: true, childList: true});
+
+</script>
+<script type="text/javascript">
+  if (window.location.href.indexOf("variant") > -1) {
+    //console.log("{{ request.path }}");
+    window.location.replace("{{ request.path }}");
+  }
+</script>
+
+</body>
+</html>
